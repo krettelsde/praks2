@@ -6,9 +6,58 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Dashboard</title>
-    <link rel = "icon" href =res/images/Favicon.ico>
+    <link rel="icon" href=res/images/Favicon.ico>
 </head>
 <body>
-here we are
+<div>
+    <h1>My Dashboard</h1>
+    <br/> <! -- viib pildi teskti alla -->
+    <img src="res/images/me.png" alt="Teacher" height="120">
+</div>
+<div>
+    <ul>
+        <li><a href="http://google.com" target="_blank">Google</a></li>
+        <! -- avab uues aknas -->
+        <li><a href="https://courses.cs.ut.ee/2022/WAD/fall/Main/PS02html">WAD</a></li>
+
+    </ul>
+
+    <table border="1">
+        <tr>
+            <th>#</th>
+            <th>Course Title</th>
+            <th>Website</th>
+
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>WAD</td>
+            <td><a href="https://courses.cs.ut.ee/2022/WAD/fall/Main/PS02html" target="_blank">Link</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Google</td>
+            <td><a href="http://google.com" target="_blank">Link</a></td>
+        </tr>
+
+    </table>
+</div>
+
+
+<form action="" method="post">
+    Course Title:<br>
+    <input type="text" name="course_title" id=""><br>
+    Semester <br>
+    <select name="semester" id="fall"><br>
+        <option>Fall</option>
+        <option>Spring</option>
+    </select><br>
+    <strong>Attendance</strong><br>
+    <input type="radio" name="Attendance" value="Virtual Attendance" id="virtual_attandance">Virtual Attandance <br>
+    <input type="radio" name="Attendance" value="Physical attendance" id="physical_attendance">Physical attendanceb<br>
+    <! -- name peab olema sama et ainult ühte valida -->
+    <button type="submit">Submit</button>
+</form>
 </body>
+
 </html>
